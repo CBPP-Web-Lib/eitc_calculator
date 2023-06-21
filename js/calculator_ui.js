@@ -92,6 +92,7 @@ function compute(input)
         filingStatus: STATUS,
     })
 
-    form.total.value = Math.round(result);
+    form.total.value = Math.round(result.federal);
+    form.total_vt.value = Math.round(result.state);
 }
 

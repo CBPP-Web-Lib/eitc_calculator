@@ -53,7 +53,11 @@ var EITC_Calculator = function() {
         var marriage_penalty_relief = (inputs.filingStatus === "married") ? parms.marriage_penalty_relief : 0,
         /*total potential EITC*/ gross_eitc = Math.min(rounded_wages, parms.earned_income_base_amount)*parms.phase_in_rate,
         /*minus phaseout*/ less_amount = Math.max(0,(rounded_wages - (parms.begin_phaseout + marriage_penalty_relief))*parms.phase_out_rate);
-        return Math.max(0, gross_eitc - less_amount);
+        var result = Math.max(0, gross_eitc - less_amount);
+        return {
+            federal: result,
+            state: result*0.38 //it's 38 percent, right?
+        }
     };
 };
 

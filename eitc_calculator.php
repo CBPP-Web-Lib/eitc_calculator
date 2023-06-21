@@ -60,7 +60,9 @@ function eitc_calculator_output() { ?>
 </div>
 
 <div class="estselect your">
-<div style="display:inline-block;">Your EITC: $</div><div style="display:inline-block;"><INPUT class="nobc nobo" id="total" NAME=total TYPE=text READONLY=Yes VALUE="" SIZE="4"></div>
+<div style="display:inline-block;">Your Federal EITC: $</div><div style="display:inline-block;"><INPUT class="nobc nobo" id="total" NAME=total TYPE=text READONLY=Yes VALUE="" SIZE="4"></div>
+</div>
+<div style="display:inline-block;">Your Vermont EITC: $</div><div style="display:inline-block;"><INPUT class="nobc nobo" id="total_vt" NAME=total_vt TYPE=text READONLY=Yes VALUE="" SIZE="4"></div>
 </div>
 <div style="clear:both;"></div>
 </form>
