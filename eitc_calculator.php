@@ -17,7 +17,7 @@ function eitc_calculator_eitc_script() {
          * This is the revised function that powers the new form-based, single page calculator
          */
 
-        $tax_year = 2022;
+        $tax_year = 2024;
         if (array_key_exists("tax_year", $_GET)) {
             $tax_year = $_GET["tax_year"]*1;
         }
